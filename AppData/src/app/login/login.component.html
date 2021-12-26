@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <style >
+            
+            </style>
+        </head>
+        <body>
+<div class="container">
+    <img class="bg" src="assets/bv.jpg">
+    <span class="form"> 
+    
+        
+         <form [formGroup]="myForm" (ngSubmit)="register()" > 
+            <h1 style="color:white" >Login</h1><br>
+         <label class="form-control">ID</label>
+         <input type="text" class="form-control"   [(ngModel)]="user.id"  [formControl]="id" >
+         <span *ngIf="id.valid==false && id.touched" class="alert alert-danger">
+             Id cannot be empty
+         </span>
+         <label class="form-control">Password</label>
+         <input type="password" class="form-control" [(ngModel)]="user.password" [formControl]="pass" >
+         <span *ngIf="pass.valid==false && pass.touched" class="alert alert-danger">
+             password cannot be empty
+         </span>
+
+         <button class="btn btn-success" >Login</button>
+     </form>
+ </span>
+ 
+ </div>
+        </body>
+</html>

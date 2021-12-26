@@ -1,0 +1,17 @@
+<body style="background-color: #B1D4E0;">
+
+    <div class="text-center">
+        <form [formGroup] = "uploadForm" (ngSubmit)="onSubmit()"> 
+        <input class="form-control" type="file" (change)="onFileSelect($event)" >
+                <label class="custom-file-label" for="customInput">Choose file...</label>      
+        <button (ngsubmit)="onSubmit()" 
+            class="btn btn-success">
+            Upload
+        </button>
+        </form>
+    </div>
+    
+    <figure id="bar"></figure>
+    </body>
+    
+    

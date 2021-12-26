@@ -1,0 +1,28 @@
+.topnav-right {
+    float: right;
+  }
+
+  .logo {
+    width: 50px;
+    height: 30px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    margin-top: 7px;;
+}
+
+p
+{
+padding-left: 50%;
+}
+img{
+    height: fit-content;
+    width: fit-content;
+}
+.divmain{
+  
+    margin-top:10px ;
+    margin-bottom: 200px;
+    
+   
+  }
+
